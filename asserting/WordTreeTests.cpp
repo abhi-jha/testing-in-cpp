@@ -74,3 +74,11 @@ TEST_CASE("Adding the same word twice throws an exception")
     REQUIRE_THROWS_AS(tree.AddWord("ab", { 2, 2 }), WordsTreeException); //This succeeds
 
 }
+
+TEST_CASE("Logging"){
+    INFO("Some test case number");
+    int x =5;
+
+    CAPTURE(x);
+    WARN("PASSED THE TEST CASE");
+}
